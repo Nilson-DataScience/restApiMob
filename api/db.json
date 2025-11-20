@@ -1,0 +1,174 @@
+{
+    "1": {
+        "nome": "Rato",
+        "habilidades": {
+            "ataque": null,
+            "defesa": null,
+            "vida": null
+        },
+        "recompensa": null
+    },
+    "2": {
+        "nome": "Formiga",
+        "habilidades": {
+            "ataque": null,
+            "defesa": null,
+            "vida": null
+        },
+        "recompensa": null
+    },
+    "3": {
+        "nome": "Aranha",
+        "habilidades": {
+            "ataque": null,
+            "defesa": null,
+            "vida": null
+        },
+        "recompensa": null
+    },
+    "4": {
+        "nome": "Cobra",
+        "habilidades": {
+            "ataque": null,
+            "defesa": null,
+            "vida": null
+        },
+        "recompensa": null
+    },
+    "5": {
+        "nome": "Lobo",
+        "habilidades": {
+            "ataque": null,
+            "defesa": null,
+            "vida": null
+        },
+        "recompensa": null
+    },
+    "6": {
+        "nome": "Worm",
+        "habilidades": {
+            "ataque": null,
+            "defesa": null,
+            "vida": null
+        },
+        "recompensa": null
+    },
+    "7": {
+        "nome": "Scopion",
+        "habilidades": {
+            "ataque": null,
+            "defesa": null,
+            "vida": null
+        },
+        "recompensa": null
+    },
+    "8": {
+        "nome": "Mummy",
+        "habilidades": {
+            "ataque": null,
+            "defesa": null,
+            "vida": null
+        },
+        "recompensa": null
+    },
+    "9": {
+        "nome": "Pharoh",
+        "habilidades": {
+            "ataque": null,
+            "defesa": null,
+            "vida": null
+        },
+        "recompensa": null
+    },
+    "10": {
+        "nome": "Goblin",
+        "habilidades": {
+            "ataque": null,
+            "defesa": null,
+            "vida": null
+        },
+        "recompensa": null
+    },
+    "11": {
+        "nome": "Assassin",
+        "habilidades": {
+            "ataque": null,
+            "defesa": null,
+            "vida": null
+        },
+        "recompensa": null
+    },
+    "12": {
+        "nome": "Zombie",
+        "habilidades": {
+            "ataque": null,
+            "defesa": null,
+            "vida": null
+        },
+        "recompensa": null
+    },
+    "13": {
+        "nome": "Skeleton",
+        "habilidades": {
+            "ataque": null,
+            "defesa": null,
+            "vida": null
+        },
+        "recompensa": null
+    },
+    "14": {
+        "nome": "Skeleton Archer",
+        "habilidades": {
+            "ataque": null,
+            "defesa": null,
+            "vida": null
+        },
+        "recompensa": null
+    },
+    "15": {
+        "nome": "Skeleton Warrior",
+        "habilidades": {
+            "ataque": null,
+            "defesa": null,
+            "vida": null
+        },
+        "recompensa": null
+    },
+    "16": {
+        "nome": "Vampire",
+        "habilidades": {
+            "ataque": null,
+            "defesa": null,
+            "vida": null
+        },
+        "recompensa": null
+    },
+    "17": {
+        "nome": "Drow Ranger",
+        "habilidades": {
+            "ataque": null,
+            "defesa": null,
+            "vida": null
+        },
+        "recompensa": null
+    },
+    "18": {
+        "nome": "Drow Mage",
+        "habilidades": {
+            "ataque": null,
+            "defesa": null,
+            "vida": null
+        },
+        "recompensa": null
+    },
+    "19": {
+        "nome": "Drow Assassin",
+        "habilidades": {
+            "ataque": null,
+            "defesa": null,
+            "vida": null
+        },
+        "recompensa": null
+    },
+    "_anotacoes": "Habilidade são zeradas, pois o algoritmo de batalha gera as habilidades na hora da luta de maneira aleatória."
+}
