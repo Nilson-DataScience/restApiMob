@@ -3,6 +3,7 @@ package handler
 import (
 	"fmt"
 	"net/http"
+	"os"
 
 	. "github.com/tbxark/g4vercel"
 )
@@ -27,6 +28,13 @@ func Handler(w http.ResponseWriter, r *http.Request) {
 			})
 		}
 	})
+	server.GET("/mob", func(context *Context) {
+		data, _ := os.ReadFile("api/mob.json")
+		context.JSON(http.StatusOK, H{
+			"data": string(data),
+		})
+	})
+
 	server.GET("/user/:id", func(context *Context) {
 		context.JSON(400, H{
 			"data": H{
