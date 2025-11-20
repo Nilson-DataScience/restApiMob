@@ -19,10 +19,10 @@ func Handler(w http.ResponseWriter, r *http.Request) {
 	})
 
 	server.GET("/mob", func(context *Context) {
-		data, err := os.ReadFile("db.json")
+		data, err := os.ReadFile("data/db.json")
 		if err != nil {
 			context.JSON(500, H{
-				"error": "MENSAGEM DE ERRO ATUALIZADA: Arquivo não encontrado!",
+				"error": "MENSAGEM DE ERRO ATUALIZADA: Arquivo não encontrado!" + err.Error(),
 			})
 			return
 		}
