@@ -1,13 +1,16 @@
 package handler
 
 import (
+	"embed"
 	"encoding/json"
 	"fmt"
 	"net/http"
-	"os"
 
 	. "github.com/tbxark/g4vercel"
 )
+
+//go:embed db.json
+var dbFile embed.FS
 
 func Handler(w http.ResponseWriter, r *http.Request) {
 	server := New()
@@ -19,19 +22,15 @@ func Handler(w http.ResponseWriter, r *http.Request) {
 	})
 
 	server.GET("/mob", func(context *Context) {
-		data, err := os.ReadFile("data/db.json")
+		data, err := dbFile.ReadFile("db.json")
 		if err != nil {
-			context.JSON(500, H{
-				"error": "MENSAGEM DE ERRO ATUALIZADA: Arquivo não encontrado!" + err.Error(),
-			})
+			context.JSON(500, H{"error": "Erro ao ler JSON embutido: " + err.Error()})
 			return
 		}
 
 		var jsonData map[string]interface{}
 		if err := json.Unmarshal(data, &jsonData); err != nil {
-			context.JSON(500, H{
-				"error": "Erro ao decodificar JSON!",
-			})
+			context.JSON(500, H{"error": "Erro ao decodificar JSON: " + err.Error()})
 			return
 		}
 
